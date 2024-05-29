@@ -12,6 +12,7 @@ const SettingsPage = async () => {
         "use server";
         await signOut();
       }}>
+        <p>{session?.user.name}</p>
         <button type="submit">Sign Out</button>
       </form>
     </div>
