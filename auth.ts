@@ -61,6 +61,8 @@ export const {
       if (token.sub && session.user) {
         session.user.id = token.sub;
       }
+      //console.log(token.sub);
+     // console.log(session.user.id);
 
       if (token.role && session.user) {
         session.user.role = token.role as UserRole;
